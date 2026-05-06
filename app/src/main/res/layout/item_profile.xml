@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:padding="8dp"
+            android:text="John Doe"
+            android:textColor="#1A1A1A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/btnEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:padding="4dp"
+            android:text="john@example.com"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@id/btnEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <!-- Mobile -->
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:padding="4dp"
+            android:text="01712345678"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@id/btnEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+        <!-- District Badge -->
+        <TextView
+            android:id="@+id/tvDistrict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#E3F2FD"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="Dhaka"
+            android:textColor="@color/deeppurple"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvMobile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMobile" />
+
+        <!-- EDIT Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="@color/purple"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- DELETE Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@id/btnEdit"
+            app:layout_constraintStart_toStartOf="@id/btnEdit"
+            app:layout_constraintTop_toBottomOf="@id/btnEdit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
