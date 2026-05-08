@@ -45,10 +45,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/fabAddProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Add New"
             android:src="@android:drawable/ic_input_add"
             android:contentDescription="Add Profile"
             android:backgroundTint="@color/purple"
